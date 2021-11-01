@@ -63,4 +63,17 @@ figcaption {
 
 #contact {
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#contact h1 {
+    font-size: 3rem;
 }
+
+#contact p {
+    font-size: xx-large;
+}
+ 
