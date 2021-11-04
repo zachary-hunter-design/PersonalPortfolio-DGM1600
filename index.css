@@ -1,10 +1,32 @@
+:root{
+    --red-pink: #eb2c31;
+    --yellow-orange: #e9cc39; 
+}
+
 * {
     margin: 0;
 }
 
+@media (max-width: 75em) {
+    html {
+        fonts-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+body {
+   background-color: #332424;
 }
 
 a {
@@ -13,10 +35,11 @@ a {
 
 
 #navbar {
+    font-family: Lato, sans-serif;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-color: darkslategray;
+    background: rgba(102, 102, 102, 0.4);
     position: fixed;
 }
 
@@ -28,24 +51,42 @@ a {
 
 .nav-list a {
     display: block;
-    font-size: 1.65rem;
-    padding: 2rem;
+    font-size: 1.25rem;
+    font-family: Lato, sans-serif;
+    padding: 1.25rem;
     color: white;
 }
 
 .nav-list a:hover {
-    background-color: red;
+    background: rgba(56, 56, 56, 0.4);
 }
 
 #welcome-section{
-    background-color: black;
+    background: linear-gradient(var(--red-pink), var(--yellow-orange));
+    font-family: forma-djr-display,sans-serif;
+    font-weight: 700;
+    font-style: normal;
     color: white;
     height: 100vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    font-size: 3.75rem;
+    color: white;
+}
+
+#welcome-section h2 {
+    font-family: Lato, sans-serif;
+    color: #d8d8d8;
 }
 
 .projects-grid {
-    background-color: forestgreen;
+    padding: 4.75rem 0 4.75rem 0;
+    background-color: #4D3636;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,12 +98,13 @@ a {
 
 figcaption {
     text-align: center;
-    font-size: x-large;
-    color: white;
+    font-family: Lato, sans-serif;
+    font-size: large;
+    color: #999999;
 }
 
 #contact {
-    height: 35vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,9 +113,32 @@ figcaption {
 
 #contact h1 {
     font-size: 3rem;
+    font-family: forma-djr-display, sans-serif;
+    color: white;
 }
 
 #contact p {
     font-size: xx-large;
+    font-family: Lato, sans-serif;
+    margin: .5rem .5rem 2rem .5rem;
+    color: white;
+}
+#contact div a {
+    margin: 2rem;
+    font-family: Lato, sans-serif;
+    font-size: 1.80rem;
+    transition: transform 0.3s ease-out;
+    color: var(--yellow-orange);
+}
+
+#profile-link:hover {
+    transform: translateX(8px);
+} 
+
+footer {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2rem;
+    color: #999999;
 }
  
