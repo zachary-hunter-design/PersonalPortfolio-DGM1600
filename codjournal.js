@@ -23,7 +23,7 @@ let myBool = true;
 
 // Array 
 
-let myArray = [] // thius is an empty array, its like a kindergarterner's cubby
+let myArray = [] // this is an empty array, its like a kindergarterner's cubby
 
 
 let myArray2 = [42, "Bob", myBool, ANSWER, true] // zero indexed. 1=0 when counting 
@@ -40,5 +40,10 @@ const myCar = {
     year: "1965", 
     vin: "j22038944087t5oljalsdihr"
 };
+
+myCar.numDoors = 4;
+
+// Fuction: is like a little engine. You define it with a function keyword, and then you give it a name and it is like a little machine that will return something to you
+// even without parameters a function can return something 
 
 
