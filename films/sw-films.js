@@ -15,3 +15,4 @@ for (let i  = 0; i < films.length; i++) {
     filmList.appendChild(figure)
  } 
 
+ 
