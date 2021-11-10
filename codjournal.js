@@ -46,4 +46,4 @@ myCar.numDoors = 4;
 // Fuction: is like a little engine. You define it with a function keyword, and then you give it a name and it is like a little machine that will return something to you
 // even without parameters a function can return something 
 
-
+// you can filter with an arrow function 
