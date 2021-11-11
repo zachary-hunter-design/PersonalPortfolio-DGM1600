@@ -3,6 +3,22 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+    padding: 2em 0;
+}
+
+button {
+    font-size: x-large;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: red;
+}
+
 #main {
     display: flex;
     flex-wrap: wrap;
