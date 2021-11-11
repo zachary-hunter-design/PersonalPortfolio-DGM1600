@@ -4,11 +4,11 @@ const mainContent = document.querySelector("#main");
 
 const maleCharacters = people.filter((person) => person.gender === 'male')
 const femaleCharacters = people.filter((person) => person.gender === 'female')
-const otherCharacters = people.filter(person) => {
+const otherCharacters = people.filter((person) => {
     if (person.gender !== 'male' && person.gender !== 'female') {
         return person
     }
-}
+})
 
 const header = document.createElement('header')
 const maleButton = document.createElement('button')
