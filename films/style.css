@@ -1,8 +1,28 @@
-main {
+
+body {
+    background-color: black;
+    color: #FFE81F;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: 233.6px;
+}
+
+#filmList {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
+
 
 figcaption {
     text-align: center;
