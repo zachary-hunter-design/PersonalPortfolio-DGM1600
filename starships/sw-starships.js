@@ -41,7 +41,7 @@ function populateShipView(shipData) {
     shipImage.addEventListener('error', () => {
         shipImage.hidden = true
         modal.classList.toggle('is-active')
-        missingMessage.textContent = ` sjjhyfuk
+        missingMessage.textContent = `${shipData.name} data unavailable, please consult Jocasta Nu`
     })
     shipView.appendChild(shipImage)
 }
