@@ -2,6 +2,7 @@
 body {
     background-color: black;
     color: #FFE81F;
+    font-family: 'Shippori Antique B1', sans-serif;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size:  1.5em;
 }
 
 header img {
@@ -16,11 +18,16 @@ header img {
     width: 233.6px;
 }
 
+header p {
+    margin: 5pt 5pt 10pt 5pt;
+}
+
 #filmList {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: #999;
 }
 
 
