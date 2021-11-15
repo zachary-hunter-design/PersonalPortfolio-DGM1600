@@ -3,36 +3,62 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #121212;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
 header {
     display: flex;
     justify-content: space-around;
-    background-color: pink;
+    background-color: #181818;
     padding: 2em 0;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'M PLUS 1', sans-serif;
 }
 
 button {
-    font-size: x-large;
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
     border-radius: 5px;
+    border: px solid;
+    color: #b3b2b3;
+    border-color: #b3b2b3;
+    background-color: #181818;
 }
 
 button:hover {
-    background-color: red;
+    background-color: rgb(203, 203, 255);
+    color: #181818;
+    border: none;
+    box-shadow: 0 5px 15px #00f;
 }
 
 #main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 figure {
-    margin: 4px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #404040;
+    box-shadow: 0px 3px 6px #4d4d4d;
 }
 
 figure img {
     width: 200px;
+    border-radius: 5px;
 }
 
 figcaption {
     text-align: center;
+    font-size: 
 }

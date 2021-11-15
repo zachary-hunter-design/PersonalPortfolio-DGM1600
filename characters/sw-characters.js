@@ -3,6 +3,7 @@ import { removeChildren } from "../utils/index.js";
 
 const mainContent = document.querySelector("#main");
 
+const allCharacters = people;
 const maleCharacters = people.filter((person) => person.gender === "male");
 const femaleCharacters = people.filter((person) => person.gender === "female");
 const otherCharacters = people.filter((person) => {
@@ -12,10 +13,20 @@ const otherCharacters = people.filter((person) => {
 });
 
 const header = document.createElement("header");
+
+const headerText = document.createElement('h1');
+headerText.textContent = 'Character Gallery'
+header.appendChild(headerText)
+
+const allButton = document.createElement("button");
+allButton.textContent = "All Characters";
+
 const maleButton = document.createElement("button");
 maleButton.textContent = "Male Characters";
 
 populateDOM(people);
+
+allButton.addEventListener("click", () => populateDOM(allCharacters));
 
 maleButton.addEventListener("click", () => populateDOM(maleCharacters));
 
@@ -24,8 +35,15 @@ femaleButton.textContent = "Female Characters";
 
 femaleButton.addEventListener("click", () => populateDOM(femaleCharacters));
 
+const otherButton = document.createElement("button");
+otherButton.textContent = "Nonbinary Characters";
+
+otherButton.addEventListener("click", () => populateDOM(otherCharacters));
+
+header.appendChild(allButton);
 header.appendChild(maleButton);
 header.appendChild(femaleButton);
+header.appendChild(otherButton);
 
 document.body.insertBefore(header, mainContent);
 
