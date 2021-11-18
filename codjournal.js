@@ -47,3 +47,13 @@ myCar.numDoors = 4;
 // even without parameters a function can return something 
 
 // you can filter with an arrow function 
+const rebels = pilots.filter((pilot) => pilot.faction === "rebels");
+or 
+const empire = pilots.filter((pilot) =>  {
+    return pilot.faction === "empire"
+});
+
+// map is similar to filter becauase it also returns an array. (not the same as Map)
+// this is an array method, it preforms a function on each element in the array
+// you can also yoink data you need through returning just a part of an object using this method
+const filmLengths = filmURLS.map((filmURL) filmURL.length);
